@@ -1,33 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/media-qyery.css">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="container">
+    <div class="container__img">
+      <picture>
+        <source media="(min-width: 850px)" srcset="./src/images/image-header-desktop.jpg">
+        <img src="./src/images/image-header-mobile.jpg" alt="Escritorio">
+      </picture>
+      
+    </div>
 
-  Get insights that help your business grow.
+    <div class="container__texto">
+      <h1> Get <span>insights</span> that help your business grow.</h1>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <p class="texto__main">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <div class="detalhes">
+        <div class="companies">
+          <p class="numero">10k+</p>
+          <p class="texto">companies</p>
+        </div>
 
-  <div class="attribution">
+        <div class="templates">
+          <p class="numero">314</p>
+          <p class="texto">templates</p>
+        </div>
+
+        <div class="queries">
+          <p class="numero">12m+</p>
+          <p class="texto">queries</p>
+        </div>
+      </div>  
+    </div>
+  </main>
+
+  
+  
+   
+
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,41 @@
+@media (min-width: 850px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+
+        grid-template-areas: 
+        "container__texto container__img"
+        ;
+        max-width:900px;
+        max-height: 400px;
+
+        text-align: left;
+    }
+
+    .container__img {
+        grid-area: container__img;
+        max-height: 400px;
+    }
+
+    .container__texto {
+        grid-area: container__texto;
+        max-height: 400px;
+    }
+
+    .detalhes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+}
