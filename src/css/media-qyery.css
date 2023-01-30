@@ -31,11 +31,15 @@
         max-height: 400px;
     }
 
+    .container__texto .texto__main {
+        height: 50PX;
+    }
+
     .detalhes {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 5rem;
+        margin-top: 50PX;
     }
 
 }
